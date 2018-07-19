@@ -14,15 +14,15 @@ class App extends Component {
   }
 
   onIncrement () {
-    this.setState(prevState => {
+    this.setState(prevState => ({
       counter: prevState.counter + 1,
-    });
+    }));
   }
 
   onDecrement () {
-    this.setState(prevState => {
+    this.setState(prevState => ({
       counter: prevState.counter - 1,
-    });
+    }));
   }
 
   render () {
